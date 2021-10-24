@@ -135,7 +135,7 @@ namespace FinalProject1
             }
 
             app.UseAuthentication();
-            // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseRouting();
 
             app.UseAuthorization();
