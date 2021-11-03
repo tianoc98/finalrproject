@@ -11,7 +11,7 @@ namespace FinalProject1.Models
         public string CustomerName { get; set; }
         public string CardName { get; set; }
         public string CardInfo { get; set; }
-
         public string SecurityCode { get; set; }
+        public DateTime Exp {get; set;}
     }
 }
