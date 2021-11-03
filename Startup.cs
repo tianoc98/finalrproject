@@ -28,8 +28,10 @@ namespace FinalProject1
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
         }
 
+        readonly string NamaOrigin = "_customOrigins";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -37,6 +39,17 @@ namespace FinalProject1
         {
 
             services.AddControllers();
+            services.AddCors(options => //ini + 
+            {
+                options.AddPolicy(
+                name: NamaOrigin,
+                builder =>
+                    {
+                    builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                    }
+                );
+            }
+            );
             services.AddSwaggerGen(swagger =>
              {
                  swagger
@@ -135,9 +148,9 @@ namespace FinalProject1
             }
 
             app.UseAuthentication();
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseRouting();
-
+            app.UseCors(NamaOrigin);
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
