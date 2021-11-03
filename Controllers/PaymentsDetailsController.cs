@@ -74,7 +74,7 @@ namespace FinalProject1.Controllers
             });
         }
 
-        [HttpPut("update/{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateItem(PaymentDetails data, int id)
         {
             var items = await _context.CardInfo.FirstOrDefaultAsync(x => x.Id == id);
