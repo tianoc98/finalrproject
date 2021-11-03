@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MqBgr+d1M0avzRdvk3YG0j1enfYR/vGDdUs2Z2rWjob3/EgCeiTVkSa+D/UkWIto3gds89A7dJxVU2LMzLLLpA==",
+  "dgSpecHash": "wPCMbCgwMIV3EzksFh5hbAuKe99q0ZXQ68lW9WyGVmVpGCQS+3x3pQFDFZYi5HkH9PIxza31Wuy8lvvsupwyEA==",
   "success": true,
-  "projectFilePath": "C:\\File\\OCBC NISP\\C#\\015_SeptyanYevtaIrawan_FinalProject1\\FinalProject1\\FinalProject1\\FinalProject1.csproj",
+  "projectFilePath": "C:\\File\\OCBC NISP\\FinalProject1\\FinalProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.11\\microsoft.aspnetcore.authentication.jwtbearer.5.0.11.nupkg.sha512",
