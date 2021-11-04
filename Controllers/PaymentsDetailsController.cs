@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace FinalProject1.Controllers
 {
     
-
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class PaymentsDetailsController : ControllerBase
